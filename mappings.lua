@@ -1,0 +1,30 @@
+return {
+  n = {
+    ['j'] = { 'gj' },
+    ['k'] = { 'gk' },
+    ['L'] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
+    ['H'] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer" },
+    ['<C-s>'] = { '<cmd>w<cr>', desc = 'Save file' },
+    ['<C-_>'] = { function() require('Comment.api').toggle.linewise.count(vim.v.count1) end, desc = 'Comment line' },
+    ['0'] = { '^' },
+    ['<F10>'] = { '<Esc>gg"+yG``', desc = 'Copy buffer to clipboard' },
+    ['<C-c>'] = { '"+y', desc = 'Yank to clipboard' },
+    ['<C-c><C-c>'] = { '^"+y$', desc = 'Yank line to clipboard' },
+    ['<leader>U'] = { '<cmd>UndotreeToggle<cr><cmd>UndotreeFocus<cr>', desc = 'Toggle undo tree' },
+    ['<leader>w'] = { '<cmd>wa<cr>', desc = 'Save all files' },
+    ['<cr>'] = { function() vim.cmd('up'); require('smartrun').run() end, desc = 'Run current file' },
+    ['<leader>r'] = { name = 'Conjure' },
+    ['<leader>re'] = { name = 'Evaluate' },
+    ['<leader>rec'] = { name = 'With comment' },
+    ['<leader>rr'] = { name = 'Reset' },
+    ['<leader>rl'] = { name = 'Log' },
+  },
+  v = {
+    ['<C-_>'] = { '<esc><cmd>lua require(\'Comment.api\').toggle.linewise(vim.fn.visualmode())<cr>', desc = 'Toggle comment line', },
+    ['<C-c>'] = { '"+y', desc = 'Yank to clipboard' },
+  },
+  x = {
+    ['ga'] = { '<Plug>(EasyAlign)*', desc = 'Align all' },
+    ['gA'] = { '<Plug>(EasyAlign)', desc = 'Align one' },
+  },
+}

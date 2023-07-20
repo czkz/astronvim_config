@@ -11,7 +11,8 @@ return {
     linebreak = true,
     showbreak = '>   ',
     mouse = 'nvi',
-    langmap = [[ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz,ёЁ;`~,хъжэбю;[]\;'\,.,ХЪЖЭБЮ;{}:\"<>]]
+    langmap = [[ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz,ёЁ;`~,хъжэбю;[]\;'\,.,ХЪЖЭБЮ;{}:\"<>]],
+    spelllang = 'en_us,ru',
   },
   g = {
     mapleader = " ",

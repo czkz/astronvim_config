@@ -6,6 +6,7 @@ return {
     ['H'] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer" },
     ['<C-s>'] = { '<cmd>w<cr>', desc = 'Save file' },
     ['<C-_>'] = { function() require('Comment.api').toggle.linewise.count(vim.v.count1) end, desc = 'Comment line' },
+    ['<C-/>'] = { function() require('Comment.api').toggle.linewise.count(vim.v.count1) end, desc = 'Comment line' },
     ['0'] = { '^' },
     ['<F10>'] = { '<Esc>gg"+yG``', desc = 'Copy buffer to clipboard' },
     ['<C-c>'] = { '"+y', desc = 'Yank to clipboard' },
@@ -27,6 +28,7 @@ return {
   },
   v = {
     ['<C-_>'] = { '<esc><cmd>lua require(\'Comment.api\').toggle.linewise(vim.fn.visualmode())<cr>', desc = 'Toggle comment line', },
+    ['<C-/>'] = { '<esc><cmd>lua require(\'Comment.api\').toggle.linewise(vim.fn.visualmode())<cr>', desc = 'Toggle comment line', },
     ['<C-c>'] = { '"+y', desc = 'Yank to clipboard' },
     ['<'] = { '<gv' },
     ['>'] = { '>gv' },

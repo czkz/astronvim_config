@@ -7,4 +7,11 @@ return {
       return opts
     end
   },
+  {
+    "nvim-treesitter",
+    opts = {
+      -- Until C++ namespace indentation is fixed
+      indent = { enable = false },
+    }
+  }
 }

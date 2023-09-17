@@ -1,7 +1,7 @@
 return {
   "AstroNvim/astrocommunity",
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
-  { import = "astrocommunity.utility.transparent-nvim" },
+  { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.mini-splitjoin" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },

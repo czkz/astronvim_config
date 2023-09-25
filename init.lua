@@ -6,8 +6,11 @@ return {
     vim.filetype.add {
       extension = {
         vert = 'glsl',
-        frag = 'glsl',
+        tesc = 'glsl',
+        tese = 'glsl',
         geom = 'glsl',
+        frag = 'glsl',
+        comp = 'glsl',
         tex = 'tex',
       },
     }
